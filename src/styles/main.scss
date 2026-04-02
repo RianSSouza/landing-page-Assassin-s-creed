@@ -1,0 +1,121 @@
+@use './variaveis';
+@use './hero';
+@use './about';
+@use './melhores';
+@use './credo';
+@use './regras';
+@use './navbar';
+
+
+@mixin title($size) {
+    font-family: "Cinzel", serif;
+    font-size: $size;
+    line-height: 1.2;
+    font-weight: 400; 
+    
+}
+
+@mixin text($size: 20px){
+    font-size: $size; 
+    font-family:"Times New Roman";
+    color: variaveis.$BrancoPadrao;
+    text-align: center;
+
+}
+
+body{
+    background-color: variaveis.$pretoPadrao;
+}
+
+.title{
+    @include title(40px);
+
+    @media (max-width: 768px){
+        @include title(30px);
+    }
+    
+    &--small{
+        @include title(36px);
+    }
+
+    &--big{
+        @include title(80px);
+
+        @media (max-width: 768px)  {
+            @include title(40px);
+    }
+    }
+
+    &--medium{
+        @include title(70px); 
+
+        @media (max-width: 768px){
+            @include title(30px);
+    }
+    }
+
+    &--colorPreto{
+        color: variaveis.$pretoPadrao;
+    }
+
+    &--colorBranco{
+        color: variaveis.$BrancoPadrao;
+    }
+}
+
+
+.text{
+    @include text();
+
+    &--small{
+        @include text(18px);
+        color: variaveis.$pretoPadrao;
+        text-align: justify;
+    }
+
+    &--big{
+        @include text(28px);
+        text-transform: uppercase;
+
+        @media (max-width: 768px){
+            @include text(14px);
+            
+    }
+    }
+
+    &--medium{
+        @include text(20px);
+        font-style: italic;
+
+        @media (max-width: 768px){
+            @include text(14px);
+            white-space: normal;
+        }
+    }
+
+    &--colorPreto{
+        color: variaveis.$pretoPadrao;
+    }
+
+    &--colorBranco{
+        color: variaveis.$BrancoPadrao;
+    }
+}
+
+.fundo-branco{
+    background-color: variaveis.$BrancoPadrao;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+a{
+    text-decoration: none;
+}

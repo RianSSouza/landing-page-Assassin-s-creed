@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/main.scss">
+    <title>Assasin</title>
+</head>
+
+<body>
+    <nav class="bottom-nav">
+        <ul class="bottom-nav__list">
+            <li><a href="#hero" class="text text--small text--colorBranco">Início</a></li>
+            <li><a href="#about" class="text text--small text--colorBranco">Sobre</a></li>
+            <li><a href="#melhores-ass" class="text text--small text--colorBranco">Personagens</a></li>
+            <li><a href="#credo" class="text text--small text--colorBranco">Credo</a></li>
+            <li><a href="#regras" class="text text--small text--colorBranco">Regras</a></li>
+        </ul>
+    </nav>
+    <section class="hero" id="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="hero__content__theme">
+                <h1 class="title title--big ">Assassin's Creed</h1>
+                <p class="text text--big">Nothing is true, everything is permitted</p>
+            </div>
+            <a href="#about"><i class="bi bi-chevron-down"></i></a>
+        </div>
+    </section>
+    <section class="about fundo-branco" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__title">
+                    <h2 class="title">
+                        O que é Assassin's Creed?
+                    </h2>
+                </div>
+                <div class="about__text">
+                    <p class="text text--small">
+                        Assassin's Creed é uma série de videogame. A premissa central envolve-se a partir da rivalidade
+                        entre duas sociedades secretas ancestrais: os Assassinos que desejam a paz através do livre
+                        arbítrio e os Templários, que têm o objetivo de dominar o mundo . Ambos tiveram uma relação
+                        indireta com uma espécie que viveu antes dos humanos, cuja sociedade foi destruída por uma
+                        gigantesca tempestade solar. Misturando personagens e ficção histórica com eventos e figuras
+                        reais, a ordem cronológica dos jogos começa em 2012, e fala de Desmond Miles, um jovem que com a
+                        ajuda do Animus (uma máquina que permite ver as suas "memórias ancestrais"), explora as memórias
+                        de alguns dos mais proeminentes Assassinos da história.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="melhores-ass">
+        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active slide-bg slide-1">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3 class="title title--small">Ezio Auditore da Firenze</h3>
+                        <p class="text text--medium">"Chegarei até o coração negro de um império corrupto para arrancar
+                            o mal pela raiz. Mas Roma
+                            não construída em apenas um dia e também não será reerguida por um Assassino solitário. Eu
+                            sou Ezio Auditore de Florença. Essa é minha Irmandade"</p>
+                    </div>
+                </div>
+                <div class="carousel-item slide-bg slide-2">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h3 class="title title--small">Altaïr Ibn-La'Ahad</h3>
+                        <p class="text text--medium">"Talvez Malik tivesse razão. Havia outros meios de silenciar o
+                            sarcedote - ele não preciava
+                            ter morrido. Mas Altaïr o matara porque... Porque ele podia. Por que ele era Altaïr
+                            Ibn-La'Ahad, filho de um Assasino. O mais habilidoso de todos da Ordem. Um Mestre Assasino."
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item slide-bg slide-3">
+                    <div class="overlay"></div>
+
+                    <div class="content">
+                        <h3 class="title title--small">Edward Kenway</h3>
+                        <p class="text text--medium">"Durante anos, estive correndo pleo mundo, tomando o que
+                            aprouvesse, sem dar a menor atenção áqueles que eu magoava. Entretanto,aqui estou... Com
+                            riqueza e reputação, sem me sentir mais sabio do que quando parti de casa..."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </section>
+    <section class="credo" id="credo">
+        <div class="credo__cabecalho">
+            <h3 class="title title--medium title--colorBranco">O Credo</h3>
+            <img src="./Images/imgCredo.png" alt="">
+        </div>
+        <p class="text text--big">
+            Quando os outros homens seguirem cegamente a verdade, lembra-te...Nada é verdade. Quando os outros homens
+            estiverem limitados pela moralidade ou pela lei, lembra-te...Tudo é permitido. Nós trabalhamos nas sombras
+            para servir a luz. Nós somos Assassinos.
+        </p>
+    </section>
+    <section class="regras fundo-branco" id="regras">
+        <div class="regras__container">
+            <h2 class="title title--medium">As três regras</h2>
+            <img src="./Images/imgPrincipios.png" alt="">
+            <ul class="regras__lista">
+                <li>
+                    <strong class="text text--big text--colorPreto">Manter sua lâmina longe dos inocentes.</strong>
+                    <p class="text text--medium text--colorPreto">Assassinos nunca devem prejudicar inocentes e sempre alvejar apenas os inimigos.</p>
+                </li>
+                <li>
+                    <strong class="text text--big text--colorPreto">Se esconder em plena vista.</strong>
+                    <p class="text text--medium text--colorPreto">Assassinos devem manter sua identidade, e a própria existência da Irmandade, em segredo.</p>
+                </li>
+                <li>
+                    <strong class="text text--big text--colorPreto">Nunca comprometer a Irmandade.</strong>
+                    <p class="text text--medium text--colorPreto">Um Assassino nunca deve tomar uma ação que possa comprometer a Irmandade.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

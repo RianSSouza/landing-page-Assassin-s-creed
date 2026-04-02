@@ -1,0 +1,43 @@
+@use './variaveis';
+
+.hero{
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url('../Images/fundoHero.jpg');
+    text-align: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+        z-index: 2;
+
+    }
+
+    button{
+        width: 68px;
+        height: 67px;
+        background-color: variaveis.$pretoPadrao;
+        border: none;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .bi{
+        color: variaveis.$BrancoPadrao;
+        font-size: 20px;
+    }
+}

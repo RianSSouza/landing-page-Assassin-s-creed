@@ -1,0 +1,36 @@
+.slide-bg {
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-1 {
+    background-image: url('../Images/fundoEzio.jpg');
+}
+
+.slide-2{
+    background-image: url('../Images/fundoAltair.jpg');
+}
+
+.slide-3{
+    background-image: url('../Images/fundoEdward.jpg');
+}
+
+
+
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+}
