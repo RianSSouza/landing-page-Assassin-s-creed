@@ -6,7 +6,7 @@
     align-items: center;
     min-height: 100vh;
     text-align: center;
-    padding: 4em 1.5em;
+    padding: 4em 0;
 
     &__container{
         max-width: 800px;
@@ -19,7 +19,8 @@
     }
 
     img{
-        max-width: 50%;
+        max-width: 100%;
+        max-width: 400px; 
         height: auto;
         margin: 2em 0;
     }
@@ -33,5 +34,17 @@
     li {
         text-align: center;
     }
+}
+
+@media(max-width: 768px){
+    img{
+       max-width: 200px; 
+    }
+
+    .regras__lista{
+        margin: 0;
+        padding: 0;
+    }
+
 }
 }
